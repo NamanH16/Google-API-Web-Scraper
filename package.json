@@ -1,0 +1,19 @@
+{
+  "name": "zomato_web_scraper_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
