@@ -6,10 +6,11 @@ const generateUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&aut
 const app = express();
 const PORT = process.env.PORT||5000;
 
+app.use(express.static("public"));
 app.use(express.json());
 
 app.get('/', (req,res)=>{
-    res.send('Welcome to Google Web Scraper API.');
+    res.sendFile(__dirname+'/index.html');
 });
 
 // ENDPOINT 1: Get search result info
